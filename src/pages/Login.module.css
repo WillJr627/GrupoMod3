@@ -1,0 +1,34 @@
+.container {
+  padding: 36px 48px 60px 48px;
+  background-color: #061b21;
+  border-radius: 12px;
+  margin: 0 auto;
+  max-width: 460px;
+}
+
+.titulo {
+  margin-bottom: 24px;
+  color: #00ff7a;
+  margin-bottom: 30px;
+}
+
+.formulario {
+  display: grid;
+  gap: 24px;
+}
+
+.link {
+  color: #00ff7a;
+  font-weight: 500;
+}
+
+.mensagemErro {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .container {
+    padding: 36px 36px 48px 36px;
+  }
+}

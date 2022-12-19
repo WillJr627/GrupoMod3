@@ -1,0 +1,109 @@
+/* Estilos Gerais */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Satoshi', sans-serif;
+}
+
+body {
+  background-color: #051418;
+  color: #f4f4f4;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+.App {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: calc(100vh + 424px);
+}
+
+@media (max-width: 920px) {
+  .App {
+    min-height: calc(100vh + 668px);
+  }
+}
+
+@media (max-width: 640px) {
+  .App {
+    min-height: calc(84vh + 912px);
+  }
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+/* Animations */
+
+.comeFromLeft {
+  transform: translateX(-40px);
+  opacity: 0;
+  animation: comeFromLeft 0.3s forwards;
+}
+
+@keyframes comeFromLeft {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.comeFromRight {
+  transform: translateX(40px);
+  opacity: 0;
+  animation: comeFromRight 0.3s forwards;
+}
+
+@keyframes comeFromRight {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.comeFromBottom {
+  transform: translateY(40px);
+  opacity: 0;
+  animation: comeFromBottom 0.3s forwards;
+}
+
+@keyframes comeFromBottom {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.comeFromTop {
+  transform: translateY(-40px);
+  opacity: 0;
+  animation: comeFromTop 0.3s forwards;
+}
+
+@keyframes comeFromTop {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}

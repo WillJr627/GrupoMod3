@@ -1,0 +1,57 @@
+.headerBackground {
+  background-color: #02181D;
+  margin-bottom: 60px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header nav {
+  display: flex;
+}
+
+.bag {
+  position: relative;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 8px;
+  color: #BEBEBE
+}
+
+.nome {
+  color: #00FF7A;
+  font-weight: 500;
+}
+
+.bag::before {
+  content: attr(data-content);
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF;
+  color: #262626;
+  border-radius: 50%;
+  font-family: 'Roboto';
+  font-weight: 700;
+  width: 12px;
+  height: 12px;
+  padding: 2px;
+  position: absolute;
+  right: 2px;
+}
+
+@media (max-width: 460px) {
+  .logo {
+    width: 100px;
+  }
+}
