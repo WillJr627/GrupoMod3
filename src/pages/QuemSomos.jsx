@@ -6,7 +6,7 @@ import marcos from '../img/equipe/marcos.png';
 import lucas from '../img/equipe/lucas.png';
 import pedro from '../img/equipe/pedro.png';
 import jonatan from '../img/equipe/jonatan.png';
-import jean from '../img/equipe/jean.png.png';
+import jean from '../img/equipe/jean.png';
 import Head from '../components/global/Head'
 
 function QuemSomos() {
